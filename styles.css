@@ -11,6 +11,11 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.titulo {
+  display: flex;
+  color: rgb(45, 182, 132);
+  font-family: 'Open Sans', sans-serif;
+}
 
 .container{
   width: 90%;
