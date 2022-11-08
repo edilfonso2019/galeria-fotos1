@@ -12,8 +12,11 @@ body{
 }
 
 .titulo {
-  display: flex;
-  color: rgb(45, 182, 132);
+  justify-content: center;
+  background-color: #0a141d;
+  
+  order: 0;
+  color:white;
   font-family: 'Open Sans', sans-serif;
 }
 
