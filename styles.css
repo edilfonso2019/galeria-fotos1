@@ -12,11 +12,11 @@ body{
 }
 
 .titulo {
-  justify-content: center;
+  text-align: center;
   background-color: #0a141d;
   
   order: 0;
-  color:white;
+  color:rgb(255, 255, 255);
   font-family: 'Open Sans', sans-serif;
 }
 
