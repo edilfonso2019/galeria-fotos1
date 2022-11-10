@@ -32,6 +32,11 @@
     <div class="tituloGeneral"><h3>Mi galeria</h3></div>
     <div class="subTitulo"><h5>By: Canelita</h5></div>
   </div>
+  <div class="ful-img" id="fulImgBox">
+    <img src="images/img1.jpg" id="ful-img" alt="">
+    <span onclick="closeImg()">X</span>
+  </div>
+  <h1><span>Imagen G</span></h1>
   <div class="social-bar">
     <a href="https://www.facebook.com/PrincesaCanelita" class="icon icon-facebook" target="_blank"></a>
     <a href="https://twitter.com/Benjamin_Edilcr" class="icon icon-twitter" target="_blank"></a>
@@ -41,24 +46,28 @@
 
 
 
+
+  <img src="images/img1.jpg" onclick="openFulImg(this.src)" alt="" class="item-img">
+
+  
   <div class="container">
-    <div class="item">
-      <img src="images/img1.jpg" alt="" class="item-img">
+    <div class="item" >
+      <img src="images/img1.jpg" id="bandera" onclick="openFulImg(this.src)" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur.</p>
       </div>
     </div>
     
-    <div class="item">
-      <img src="images/img2.jpg" alt="" class="item-img">
+    <div class="item" >
+      <img src="images/img2.jpg" onclick="openFulImg('images/img2.jpg')" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur.</p>
       </div>
     </div>
     
-    <div class="item">
+    <div class="item" onclick="openFulImg(img.src='images/img3.jpg')">
       <img src="images/img3.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -66,8 +75,8 @@
       </div>
     </div>
     
-    <div class="item">
-      <img src="images/img4.jpg" alt="" class="item-img">
+    <div class="item" onclick="openFulImg('sapo')">
+      <img src="images/img4.jpg" id="sapo" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur.</p>
@@ -75,7 +84,7 @@
     </div>
     
     
-    <div class="item">
+    <div class="item" onclick="openFulImg(this.src)" >
       <img src="images/img5.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -83,7 +92,7 @@
       </div>
     </div>
     
-    <div class="item">
+    <div class="item" onclick="openFulImg()">
       <img src="images/img6.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -91,7 +100,7 @@
       </div>
     </div>
 
-    <div class="item">
+    <div class="item" onclick="openFulImg()">
       <img src="images/img7.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -100,7 +109,7 @@
     </div>
     
     
-    <div class="item">
+    <div class="item" onclick="openFulImg()">
       <img src="images/img8.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -108,7 +117,7 @@
       </div>
     </div>
 
-    <div class="item">
+    <div class="item" onclick="openFulImg()">
       <img src="images/img9.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -117,7 +126,7 @@
     </div>
     
 
-    <div class="item">
+    <div class="item" onclick="openFulImg()">
       <img src="images/img10.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -126,7 +135,7 @@
     </div>
     
     
-    <div class="item">
+    <div class="item" onclick="openFulImg()">
       <img src="images/img11.jpg" alt="" class="item-img">
       <div class="item-text">
         <h3>Imagen 1</h3>
@@ -365,6 +374,6 @@
   </footer>
 
 
-
+  <script src="script.js"></script>
 </body>
 </html>
