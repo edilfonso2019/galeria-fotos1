@@ -91,7 +91,11 @@ h1 span {
 .ful-img {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  /* DAR COLOR BLUE AL FONDO */
+  background-color: rgba(255, 255, 255, 0.161);
+  border: 1px solid #000000;
+  backdrop-filter: blur(6.5px);
+  /* fin de blue */
   position: fixed;
   top: 0;
   left: 0;
