@@ -1,379 +1,408 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Galería</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="font.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="estilos.css">
-  <link rel="shortcut icon" href="images/favicon.png">
-  <!--Iconos-->
-  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta charset="UTF-8" />
+    <title>Galería</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!--Iconos-->
+    <script
+      src="https://kit.fontawesome.com/eb496ab1a0.js"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-  <!-- Hotjar Tracking Code for https://edilfonso2019.github.io/galeria-fotos1/ -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 3236714, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-</head>
-<body>
-  
-  <div class="titulo">
-    <div class="tituloGeneral"><h3>Mi galeria</h3></div>
-    <div class="subTitulo"><h5>By: Canelita</h5></div>
-  </div>
-  <div class="ful-img" id="fulImgBox">
-    <img src="images/img1.jpg" id="ful-img" alt="">
-    <span onclick="closeImg()">X</span>
-  </div>
-  <h1><span>Imagen G</span></h1>
-  <div class="social-bar">
-    <a href="https://www.facebook.com/PrincesaCanelita" class="icon icon-facebook" target="_blank"></a>
-    <a href="https://twitter.com/Benjamin_Edilcr" class="icon icon-twitter" target="_blank"></a>
-    <a href="https://www.youtube.com/c/BenjaminEdilfonso/videos" class="icon icon-youtube" target="_blank"></a>
-    <a href="https://www.instagram.com/prinsesa.canelita" class="icon icon-instagram" target="_blank"></a>
-  </div>
-
-
-
-
-  <img src="images/img1.jpg" onclick="openFulImg(this.src)" alt="" class="item-img">
-
-  
-  <div class="container">
-    <div class="item" >
-      <img src="images/img1.jpg" id="bandera" onclick="openFulImg(this.src)" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
+    <!-- Hotjar Tracking Code for https://edilfonso2019.github.io/galeria-fotos1/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3236714, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <div class="titulo">
+      <div class="tituloGeneral"><h3>Mi galeria</h3></div>
+      <div class="subTitulo"><h5>By: Canelita</h5></div>
     </div>
-    
-    <div class="item" >
-      <img src="images/img2.jpg" onclick="openFulImg('images/img2.jpg')" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
+    <div class="ful-img" id="fulImgBox">
+      <img src="images/img1.jpg" id="fulImg" alt="" />
+      <span onclick="closeImg()">X</span>
     </div>
-    
-    <div class="item" onclick="openFulImg(img.src='images/img3.jpg')">
-      <img src="images/img3.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
-    <div class="item" onclick="openFulImg('sapo')">
-      <img src="images/img4.jpg" id="sapo" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
-    
-    <div class="item" onclick="openFulImg(this.src)" >
-      <img src="images/img5.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
-    <div class="item" onclick="openFulImg()">
-      <img src="images/img6.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
+    <h1><span>Imagen G</span></h1>
+    <div class="social-bar">
+      <a
+        href="https://www.facebook.com/PrincesaCanelita"
+        class="icon icon-facebook"
+        target="_blank"
+      ></a>
+      <a
+        href="https://twitter.com/Benjamin_Edilcr"
+        class="icon icon-twitter"
+        target="_blank"
+      ></a>
+      <a
+        href="https://www.youtube.com/c/BenjaminEdilfonso/videos"
+        class="icon icon-youtube"
+        target="_blank"
+      ></a>
+      <a
+        href="https://www.instagram.com/prinsesa.canelita"
+        class="icon icon-instagram"
+        target="_blank"
+      ></a>
     </div>
 
-    <div class="item" onclick="openFulImg()">
-      <img src="images/img7.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+    <div class="container">
+      <div class="item" onclick="openFulImg(this)">
+        <img src="images/img1.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    
-    
-    <div class="item" onclick="openFulImg()">
-      <img src="images/img8.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
 
-    <div class="item" onclick="openFulImg()">
-      <img src="images/img9.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item" onclick="openFulImg(this)">
+        <img src="images/img2.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    
 
-    <div class="item" onclick="openFulImg()">
-      <img src="images/img10.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item" onclick="openFulImg(this)">
+        <img src="images/img3.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    
-    
-    <div class="item" onclick="openFulImg()">
-      <img src="images/img11.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img12.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
 
-    <div class="item">
-      <img src="images/img13.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item" onclick="openFulImg('sapo')">
+        <img src="images/img4.jpg" id="sapo" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <img src="images/img14.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/img15.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
 
-    <div class="item">
-      <img src="images/img16.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item" onclick="openFulImg(this.src)">
+        <img src="images/img5.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img17.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img18.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/img19.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/img20.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
 
+      <div class="item" onclick="openFulImg()">
+        <img src="images/img6.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
 
-    <div class="item">
-      <img src="images/img21.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item" onclick="openFulImg()">
+        <img src="images/img7.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img22.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img23.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/img24.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/img25.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
 
-    <div class="item">
-      <img src="images/img26.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item" onclick="openFulImg()">
+        <img src="images/img8.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
 
+      <div class="item" onclick="openFulImg()">
+        <img src="images/img9.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
 
+      <div class="item" onclick="openFulImg()">
+        <img src="images/img10.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
 
-    <div class="item">
-      <img src="images/img27.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item" onclick="openFulImg()">
+        <img src="images/img11.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img28.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/img29.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/img30.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img31.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
 
-    <div class="item">
-      <img src="images/img32.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item">
+        <img src="images/img12.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="item">
-      <img src="images/img33.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item">
+        <img src="images/img13.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
+      <div class="item">
+        <img src="images/img14.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/img15.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
 
-    <div class="item">
-      <img src="images/img34.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item">
+        <img src="images/img16.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
-    
-    <div class="item">
-      <img src="images/img35.jpg" alt="" class="item-img">
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
-    </div>
 
-    <div class="item">
-      <img src="images/img36.jpg" alt="" class="item-img">
-      
-      <div class="item-text">
-        <h3>Imagen 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <div class="item">
+        <img src="images/img17.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-    </div>
 
-  </div>
-  
+      <div class="item">
+        <img src="images/img18.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/img19.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/img20.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
 
-  <!--::::Pie de Pagina::::::-->
-  <footer class="pie-pagina">
-    <div class="grupo-1">
-      <div class="box">
-        <figure>
-          <a href="#">
-            <img src="images/logo.png" alt="Logo de SLee Dw">
-          </a>
-        </figure>
+      <div class="item">
+        <img src="images/img21.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-      <div class="box">
-        <h2>SOBRE MÍ</h2>
-        <p>Hola soy Canelita, estoy en busca de un chihuahua romantico y muy galán.</p>
-        <p>Si quieres saber más de mi día a día, sigueme en mis redes</p>
+
+      <div class="item">
+        <img src="images/img22.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
       </div>
-      <div class="box">
-        <h2>SIGUENOS</h2>
-        <div class="red-social">
-          <a href="https://www.facebook.com/PrincesaCanelita" class="fa fa-facebook" target="_blank"></a>
-          <a href="https://www.instagram.com/prinsesa.canelita" class="fa fa-instagram" target="_blank"></a>
-          <a href="https://twitter.com/Benjamin_Edilcr" class="fa fa-twitter" target="_blank"></a>
-          <a href="https://www.youtube.com/c/BenjaminEdilfonso/videos" class="fa fa-youtube" target="_blank"></a>
+
+      <div class="item">
+        <img src="images/img23.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/img24.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/img25.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img26.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img27.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img28.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/img29.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/img30.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img31.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img32.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img33.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img34.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img35.jpg" alt="" class="item-img" />
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img36.jpg" alt="" class="item-img" />
+
+        <div class="item-text">
+          <h3>Imagen 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
       </div>
     </div>
-    <div class="grupo-2">
-      <small>&copy; 2021 <b>Edilcris Dw</b> - Todos los Derechos Reservados.</small>
-    </div>
-  </footer>
 
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="images/logo.png" alt="Logo de SLee Dw" />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE MÍ</h2>
+          <p>
+            Hola soy Canelita, estoy en busca de un chihuahua romantico y muy
+            galán.
+          </p>
+          <p>Si quieres saber más de mi día a día, sigueme en mis redes</p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a
+              href="https://www.facebook.com/PrincesaCanelita"
+              class="fa fa-facebook"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.instagram.com/prinsesa.canelita"
+              class="fa fa-instagram"
+              target="_blank"
+            ></a>
+            <a
+              href="https://twitter.com/Benjamin_Edilcr"
+              class="fa fa-twitter"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.youtube.com/c/BenjaminEdilfonso/videos"
+              class="fa fa-youtube"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2021 <b>Edilcris Dw</b> - Todos los Derechos
+          Reservados.</small
+        >
+      </div>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
